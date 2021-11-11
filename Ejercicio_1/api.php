@@ -16,15 +16,15 @@
     $mensaje = (string) "";
     if($numero1 > $numero2){
         $mensaje = <<<HTML
-    <code>$${!${''}= "numero1"} (<span>${!${''} = gettype($numero1)}</span>) <span>=</span> <span>$numero1</span>,
-    $${!${''}= "numero2"} (<span>${!${''} = gettype($numero2)}</span>) <span>=</span> <span>$numero2</span></code>
-    <code>El numero <span>$numero1</span> es mayor que el numero <span>$numero2</span>, <br><span>Servidor del BACKEND: ${!${''} = $_SERVER["HTTP_HOST"]}</span></code>
+<code>$${!${''}= "numero1"} (<span>${!${''} = gettype($numero1)}</span>) <span>=</span> <span>$numero1</span>,
+$${!${''}= "numero2"} (<span>${!${''} = gettype($numero2)}</span>) <span>=</span> <span>$numero2</span></code>
+<code>El numero <span>$numero1</span> es mayor que el numero <span>$numero2</span>, <br><span>Servidor del BACKEND: ${!${''} = $_SERVER["HTTP_HOST"]}</span></code>
 HTML;
     }else{
         $mensaje = <<<HTML
-    <code>$${!${''}= "numero1"} (<span>${!${''} = gettype($numero1)}</span>) <span>=</span> <span>$numero1</span>,
-    $${!${''}= "numero2"} (<span>${!${''} = gettype($numero2)}</span>) <span>=</span> <span>$numero2</span></code>
-    <code>El numero <span>$numero2</span> es mayor que el numero <span>$numero1</span>, <br><span>Servidor del BACKEND: ${!${''} = $_SERVER["HTTP_HOST"]}</span></code>
+<code>$${!${''}= "numero1"} (<span>${!${''} = gettype($numero1)}</span>) <span>=</span> <span>$numero1</span>,
+$${!${''}= "numero2"} (<span>${!${''} = gettype($numero2)}</span>) <span>=</span> <span>$numero2</span></code>
+<code>El numero <span>$numero2</span> es mayor que el numero <span>$numero1</span>, <br><span>Servidor del BACKEND: ${!${''} = $_SERVER["HTTP_HOST"]}</span></code>
 HTML;
     }
 
