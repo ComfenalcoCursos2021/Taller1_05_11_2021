@@ -19,7 +19,7 @@ Lista de numeros ingresados: ${config.body.numeros.join()}
     }while(permiso);
 
     config.body = JSON.stringify(config.body);
-    let peticion = await fetch("api.php", config);
+    let peticion = await fetch("https://pruebacofenalco.000webhostapp.com/Taller1_05_11_2021/Ejercicio_2/api.php", config);
     let json = await peticion.text();
     alert(json);
 })

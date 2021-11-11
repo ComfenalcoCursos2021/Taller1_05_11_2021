@@ -7,11 +7,13 @@
         $_DATA = json_decode($_DATA, true);
         extract($_DATA);
     }else{
-        $numeros = (array) [0];
+        $numeros = (array) [23];
     }
-    print_r(<<<JOSN
+    $mensaje = <<<JOSN
     El numero mayor es ${!${''} = max($numeros)} lista de numeros enviados es: 
     ${!${''} = implode(",", $numeros)}
-JOSN);
+    Servidor del BACKEND: ${!${''} = $_SERVER["HTTP_HOST"]}
+JOSN;
+    print_r($mensaje);
 
 ?>
